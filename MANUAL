@@ -1,0 +1,111 @@
+Hier ist die aktualisierte und um einen leicht verständlichen Leitfaden für das Menüband (Ribbon) ergänzte Version des Handbuchs:
+
+---
+
+# Mailsorter - User Manual
+
+This manual guides you through installing, importing, and using **Mailsorter** to manage your Microsoft Outlook folders and file emails with lightning speed.
+
+---
+
+## 1. Importing the VBA Files & Adding a Ribbon Button
+
+Before you can run the tool, you need to import the source files and create an easy way to click it from your Outlook menu:
+
+### Step A: Import the Files
+
+1. Open Microsoft Outlook.
+2. Press `Alt + F11` to open the Visual Basic for Applications (VBA) Editor.
+3. In the VBA menu bar, go to **File** -> **Import File...** (`Ctrl + M`).
+4. Navigate to the `/src` folder of this repository and select all required source and form files (`.bas`, `.frm`, and `.frx`).
+5. Ensure the **TreeView Reference** is active:
+* Go to **Tools** -> **References** in the VBA menu.
+* Make sure **Microsoft Windows Common Controls 6.0 (SP6)** is checked. If it is missing or grayed out, consult your system administrator.
+
+
+6. Close the VBA editor.
+
+### Step B: Add a Button to the Outlook Ribbon (Toolbar)
+
+To run your new macro with a single click without opening the VBA editor every time, follow these beginner-friendly steps to add it to your Outlook ribbon:
+
+1. Open Microsoft Outlook and go to **File** in the top left corner.
+2. Click on **Options** at the very bottom of the left menu. A new window will open.
+3. In the Outlook Options window, click on **Customize Ribbon** on the left side.
+4. Look at the right side of the window (where your menu tabs like "Home" or "Send / Receive" are listed).
+* Select the tab where you want the button to appear (for example, click on **Home**).
+* Click the **New Group** button at the bottom right to create a custom section inside that tab (you can right-click the new group afterwards to **Rename** it to something like *Mailsorter*).
+
+
+5. Now look at the top left drop-down menu that says *Choose commands from:* and change it from "Popular Commands" to **Macros**.
+6. You should now see your imported macro (`modEmailSorter.RunFolderPicker`) listed in that box.
+7. Click on your macro name to select it, then click the **Add >>** button in the middle to move it into your newly created custom group on the right side.
+8. *(Optional)* You can click **Rename** on your added macro on the right side to give it a nice display name (e.g., `Sort Emails`) and pick a nice icon for it.
+9. Click **OK** at the bottom right to save your changes.
+
+You will now see your brand-new button directly in your Outlook ribbon and can launch the tool with a single click!
+
+---
+
+## 2. Modes of Operation
+
+The tool operates in two distinct modes depending on whether you have selected emails in Outlook:
+
+* **Move / Copy Mode (Active when emails are selected):**
+If you select one or more emails in your Outlook message list and trigger the macro, the main form opens in filing mode. Double-clicking a folder or using the action buttons will instantly move or copy the selected items to that destination.
+* **Navigation / "Go To Folder" Mode (Active when NO emails are selected):**
+If you run the macro without selecting any emails, the tool opens as a rapid folder launcher. Double-clicking a folder instantly navigates your Outlook main window to that directory.
+
+---
+
+## 3. Form Guide: How Every Window & Control Works
+
+### A. The Main Folder Picker Form (`frmFolderPicker`)
+
+This is your central hub for finding and selecting folders instantly.
+
+* **Live Search Filter Box:**
+* *What it does:* Type any part of a destination folder name here and press `Enter` (or watch it filter dynamically).
+* *Why it helps:* It cuts through deep, nested directory trees in milliseconds following the *"Find, Don't Search"* philosophy.
+
+
+* **Folder Tree View:**
+* *What it does:* Displays your active mailboxes and folder hierarchies visually.
+* *Interaction:* Expand/collapse nodes manually or use the search filter to locate specific targets. Double-clicking a folder triggers the primary action (Move/Copy or Go To).
+
+
+* **Recent Folders History Panel:**
+* *What it does:* Tracks your last 20 visited destination folders automatically.
+* *Why it helps:* Frequent filing targets are kept right at your fingertips, allowing you to route subsequent emails with a single click.
+
+
+* **Action Buttons:**
+* **Move:** Relocates the selected email(s) to the highlighted destination folder.
+* **Copy:** Duplicates the selected email(s) into the target folder while keeping the original.
+* **New Subfolder:** Creates a brand-new subfolder on the fly directly inside the currently selected directory.
+* **Settings:** Opens the configuration window (`frmSettings`).
+* **Cancel / Close:** Closes the form without taking any action.
+
+
+
+---
+
+### B. The Settings Form (`frmSettings`)
+
+Accessible via the settings button on the main form, this window allows you to customize how mailboxes and folders behave.
+
+* **Listbox: Mailboxes & Stores**
+* *What it does:* Displays all detected email accounts and stores available in your Outlook profile (including shared mailboxes and archives).
+
+
+* **Checkbox: Include in folder search / Active account**
+* *What it does:* Determines whether a specific mailbox or store is actively scanned and included when you use the live folder search. Unchecking a store keeps its irrelevant folders hidden from your daily workflow.
+
+
+* **Listbox: Folder Structure / Roots**
+* *What it does:* Shows the primary folder hierarchy for a selected store, letting you define specific root boundaries if needed.
+
+
+* **Action Buttons:**
+* **Save Changes:** Commits your updated configurations, updates the folder cache, and closes the settings window.
+* **Cancel:** Discards any unedited configuration adjustments and closes the window.
