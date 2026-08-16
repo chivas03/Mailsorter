@@ -1,6 +1,9 @@
 # Mailsorter
-A lightweight, efficient utility designed to streamline and organize Outlook mailboxes and folder structures. Built on "Find, Don't Search": Instantly filter folders, file emails with a click &amp; use recent history.
+A lightweight, efficient utility designed to streamline and organize Outlook mailboxes and folder structures. Built on "Find, Don't Search": Instantly filter folders, file emails with a click & use recent history.
 
+---
+
+> ⚠️ **Disclaimer & IT Notice:** This tool interacts with Microsoft Outlook via VBA macros. Use it at your own risk. If you are working in a corporate environment or are unfamiliar with VBA macros, please consult your system administrator or IT department before installation.
 
 ## Stop Endless Scrolling: Why I Built This Tool
 
@@ -29,7 +32,7 @@ Following the philosophy of **"Find, Don't Search"**, this tool transforms the p
 * **Safe Error Handling:** Robust connection checks to handle shared mailboxes and offline/archived stores smoothly (`store.IsOpen`).
 * **Versatile Modes:** Move or copy selected emails, or use the tool purely as a quick navigation launcher ("Go To Folder").
 * **Subfolder Creation:** Create new subfolders on the fly directly from the form.
-* **Tested Compatibility:** Fully compatible with **Microsoft Outlook 2024 LTSC** on Windows 11 64 bit sysem (and compatible desktop versions supporting VBA).
+* **Tested Compatibility:** Fully compatible with **Microsoft Outlook 2024 LTSC** on Windows 11 64-bit systems (and compatible desktop versions supporting VBA).
 
 ---
 
@@ -61,7 +64,7 @@ Following the philosophy of **"Find, Don't Search"**, this tool transforms the p
 
 ## Feedback, Bugs & Contributions
 
-As this is a hobby project, feedback, bug reports, and optimization ideas are very welcome! Please open an **Issue** or submit a **Pull Request**.
+As this is a side project, feedback, bug reports, and optimization ideas are very welcome! Please open an **Issue** or submit a **Pull Request**.
 
 ---
 
@@ -70,8 +73,7 @@ As this is a hobby project, feedback, bug reports, and optimization ideas are ve
 If this tool makes your daily work life easier and saves you time, I would be thrilled! If you'd like to support my hobby development, you are welcome to buy me a coffee.
 
 ---
-> ⚠️ **Disclaimer & IT Notice:** This tool interacts with Microsoft Outlook via VBA macros. Use it at your own risk. If you are working in a corporate environment or are unfamiliar with VBA macros, please consult your system administrator or IT department before installation.
-> 
+
 ## License
 
 This project is open-source and free to use for both **private and commercial purposes**, with one specific condition: **You may not commercialize this software, package it, or sell the idea/code in any form.**
