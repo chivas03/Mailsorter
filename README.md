@@ -68,9 +68,9 @@ As this is a side project, feedback, bug reports, and optimization ideas are ver
 
 ---
 
-## Fuel My Coding Hobby: Support the Project
+## Support the Project
 
-If this tool makes your daily work life easier and saves you time, I would be thrilled! If you'd like to support my hobby development, you are welcome to buy me a coffee.
+If this tool makes your daily work life easier and saves you time, I would be thrilled! If you'd like to support the ongoing maintenance and development of this project, you are welcome to buy me a coffee.
 
 ---
 
