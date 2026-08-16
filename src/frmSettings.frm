@@ -23,20 +23,32 @@ Private isLoading As Boolean
 Private currentStoreName As String
 
 ' =========================================================================
-' FORM INITIALIZATION & SETUP / FORMULAR-INITIALISIERUNG & SETUP
+' FORM INITIALIZATION & LISTBOX ALIGNMENT (frmSettings)
 ' =========================================================================
 Private Sub UserForm_Initialize()
     On Error GoTo EH
     isLoading = True
     
-    ' 1. Apply global theme & title / Globales Theme & Titel setzen
+    ' 1. Apply global theme & title / Globales Theme & Titel
     modUITheme.ApplyFormTheme Me
     Me.Caption = "Settings"
     
-    ' 2. Enable multi-selection for folder list / Multiselect fuer Ordnerliste aktivieren
-    lstStores.MultiSelect = fmMultiSelectMulti
+    ' 2. Correct ListBox sizing & layout / ListBox-Anzeige korrigieren
+    With lstAccounts
+        .IntegralHeight = True  ' Erlaubt sauberes Einrasten ganzer Zeilen
+        .Height = 125
+        .Top = 30
+    End With
     
-    ' 3. Populate levels and initialize button styles / Ebene-ComboBoxen füllen & Buttons stylen
+    With lstStores
+        .MultiSelect = fmMultiSelectMulti
+        .ListStyle = fmListStyleOption
+        .IntegralHeight = True  ' Verhindert abgeschnittene Zeilen am Ende
+        .Height = 125
+        .Top = 30
+    End With
+    
+    ' 3. Populate levels and initialize button styles / Ebene-ComboBoxen fÃ¼llen & Buttons stylen
     InitLevelComboBoxes
     SetupAllButtons
     
@@ -82,7 +94,7 @@ Private Sub InitLevelComboBoxes()
 End Sub
 
 ' =========================================================================
-' UI EVENTS & CONTROLS / BENUTZEROBERFLÄCHEN-EVENTS
+' UI EVENTS & CONTROLS / BENUTZEROBERFLÃ„CHEN-EVENTS
 ' =========================================================================
 Private Sub lstAccounts_Click()
     If isLoading Then Exit Sub
