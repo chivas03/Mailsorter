@@ -65,9 +65,9 @@ Da es sich hierbei um ein persönliches Projekt handelt, sind Feedback, Bug-Meld
 
 ---
 
-## Unterstütze mein Coding-Hobby: Projekt unterstützen
+## Das Projekt unterstützen
 
-Wenn dir dieses Tool den Arbeitsalltag erleichtert und Zeit spart, freue ich mich riesig! Wer meine Hobby-Entwicklung unterstützen möchte, darf mir gerne einen Kaffee spendieren.
+Wenn dir dieses Tool den Arbeitsalltag erleichtert und Zeit spart, freue ich mich riesig! Wer die Weiterentwicklung und Pflege dieses Projekts unterstützen möchte, darf mir gerne einen Kaffee spendieren.
 
 ---
 
