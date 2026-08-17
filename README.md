@@ -7,7 +7,7 @@ A lightweight, efficient utility designed to streamline and organize Outlook mai
 
 ## Stop Endless Scrolling: Why I Built This Tool
 
-As someone who is not a professional developer, I build tools in my spare time to solve real-world productivity hurdles. This project started a long time ago as a simple, basic treeview to help sort emails. Over time it evolved into a feature-rich productivity utility.
+As someone who is not a professional developer, I build tools in my spare time to solve real-world productivity hurdles - of course, with the support of AI. This project started a long time ago as a simple, basic treeview to help sort emails. Over time, it evolved into a feature-rich productivity utility.
 
 ### The Problem: The Chaos of Deep Folder Structures
 Everyone who deals with a high volume of emails in Microsoft Outlook knows the struggle:
@@ -70,7 +70,7 @@ As this is a side project, feedback, bug reports, and optimization ideas are ver
 
 ## Support the Project
 
-If this tool makes your daily work life easier and saves you time, I would be thrilled! If you'd like to support the ongoing maintenance and development of this project, you are welcome to buy me a coffee.
+If this tool makes your daily work life easier and saves you time, I would be thrilled! If you'd like to support the ongoing maintenance and development of this project during night shifts, you are welcome to treat a friend with a coffee.
 
 ---
 
