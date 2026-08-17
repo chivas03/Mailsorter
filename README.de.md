@@ -4,7 +4,7 @@ Ein leichtgewichtinales, effizientes Tool zur Optimierung und Organisation von O
 
 ## Schluss mit dem ewigen Scrollen: Warum ich dieses Tool entwickelt habe
 
-Da ich kein professioneller Entwickler bin, baue ich Tools in meiner Freizeit, um echte Hürden im Büroalltag zu lösen. Dieses Projekt begann vor langer Zeit als einfache TreeView zum Sortieren von E-Mails. Mit der Zeit hat es sich zu einem funktionsreichen Produktivitätshelfer weiterentwickelt.
+Da ich kein professioneller Entwickler bin, baue ich Tools in meiner Freizeit mit der Hilfe von AI, um echte Hürden im Büroalltag zu lösen. Dieses Projekt begann vor langer Zeit als einfache TreeView zum Sortieren von E-Mails. Mit der Zeit hat es sich zu einem funktionsreichen Produktivitätshelfer weiterentwickelt.
 
 ### Das Problem: Das Chaos tiefer Ordnerstrukturen
 Jeder, der mit einer großen E-Mail-Flut in Microsoft Outlook arbeitet, kennt den Kampf:
@@ -67,7 +67,7 @@ Da es sich hierbei um ein persönliches Projekt handelt, sind Feedback, Bug-Meld
 
 ## Das Projekt unterstützen
 
-Wenn dir dieses Tool den Arbeitsalltag erleichtert und Zeit spart, freue ich mich riesig! Wer die Weiterentwicklung und Pflege dieses Projekts unterstützen möchte, darf mir gerne einen Kaffee spendieren.
+Wenn dir dieses Tool den Arbeitsalltag erleichtert und Zeit spart, freue ich mich riesig! Wer die Weiterentwicklung und Pflege dieses Projekts unterstützen möchte, darf gerne einen Freund einen Kaffee spendieren.
 
 ---
 
